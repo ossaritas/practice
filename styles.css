@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("./images/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+}
+
+:root {
+  --primary-orange: hsl(26, 100%, 55%);
+  --pale-orange: hsl(25, 100%, 94%);
+
+  --very-dark-blue: hsl(220, 13%, 13%);
+  --dark-grayish-blue: hsl(219, 9%, 45%);
+  --grayish-blue: hsl(220, 14%, 75%);
+  --light-grayish-blue: hsl(223, 64%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rem 0 10rem;
+}
+header {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 14vh;
+  border-bottom: 0.5px solid var(--grayish-blue);
+}
+.nav-link-list {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+  gap: 1.5rem;
+
+  list-style: none;
+  padding-left: 3rem;
+  color: var(--grayish-blue);
+  font-weight: 500;
+}
+.nav-link-list > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+  transition: ease-in-out 300ms;
+}
+.nav-link-list > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav-link-list > li:hover {
+  color: var(--very-dark-blue);
+  border-bottom: 1px solid var(--very-dark-blue);
+}
+.nav-logo {
+  height: 20px;
+  width: 140px;
+}
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.avatar {
+  height: 3rem;
+  width: 3rem;
+}
+.shop-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  gap: 7.5rem;
+  width: 100%;
+  padding: 5.5rem 3rem;
+}
+
+main > div {
+  height: 100%;
+  width: 100%;
+  background: var(--pale-orange);
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.big-img > img {
+  border-radius: 20px;
+  width: 28rem;
+  height: 28rem;
+}
+
+.small-img > img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10px;
+}
+
+.left-small-img-container {
+  gap: 2.5rem;
+  display: flex;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 3rem;
+}
+
+.right-container > h5 {
+  color: var(--primary-orange);
+  font-size: 0.8rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px var(--pale-orange);
+}
+
+.right-container > h3 {
+  font-size: 2.5rem;
+}
+
+.right-container > p {
+  padding-top: 1rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+.right-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-price > p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right-price > p:first-child {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.right-price > p:last-child {
+  text-decoration: line-through;
+  color: var(--grayish-blue);
+  padding-top: 3px;
+  font-weight: 500;
+}
+.right-price-b {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: var(--primary-orange);
+  background-color: var(--pale-orange);
+}
+
+.foot-container {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(236, 234, 234);
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.input {
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  text-align: center;
+  border: none;
+  background: rgb(236, 234, 234);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-grow: 1;
+  background-color: var(--primary-orange);
+  border-radius: 5px;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+button {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.left-small-img-container > div:first-child > img {
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  opacity: 0.7;
+  border: 3px solid var(--primary-orange);
+}
